@@ -11,3 +11,6 @@ cdk deploy
 
 ## TODO
 - Current IAM roles are not intended to be used in production. We've sacrificed the security in seek of the POC simplicity.
+
+## Attributes
+- Based on [Forecast POC in Box](https://github.com/chrisking/ForecastPOC)
