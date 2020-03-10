@@ -1,14 +1,13 @@
-# Welcome to your CDK TypeScript project!
+# Welcome to your CDK Forecast POC project!
 
-This is a blank project for TypeScript development with CDK.
+## Getting Started
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+To deploy the stack, run:
+```shell script
+npm run build
+cdk synthesize
+cdk deploy
+```
 
-## Useful commands
-
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+## TODO
+- Current IAM roles are not intended to be used in production. We've sacrificed the security in seek of the POC simplicity.
