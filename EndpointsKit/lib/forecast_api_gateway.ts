@@ -4,12 +4,12 @@ import { MakeForecastLambda } from "./make_foracast_lambda"
 
 export class ForecastAPIGateway extends APIGateway.RestApi {
 
-    constructor(scope: CDK.Construct, prefix: string) {
-        super(scope, `ForecastAPIGateway_${prefix}`)
+    constructor(scope: CDK.Construct) {
+        super(scope, `ForecastAPIGateway`)
 
         const forecasts = this.root.addResource("forecasts")
 
-        const makeForecastLambda = new MakeForecastLambda(scope, prefix)
+        const makeForecastLambda = new MakeForecastLambda(scope)
         const makeForecastIntegration = new APIGateway.LambdaIntegration(makeForecastLambda)
         forecasts.addMethod("POST", makeForecastIntegration)
     }
