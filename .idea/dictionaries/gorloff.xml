@@ -2,6 +2,9 @@
   <dictionary name="gorloff">
     <words>
       <w>amazonaws</w>
+      <w>boto</w>
+      <w>deeparp</w>
+      <w>forecastquery</w>
       <w>sagemaker</w>
     </words>
   </dictionary>
