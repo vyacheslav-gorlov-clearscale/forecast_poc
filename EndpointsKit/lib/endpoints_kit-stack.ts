@@ -1,5 +1,4 @@
 import * as cdk from '@aws-cdk/core'
-import { v4 as UUID } from "uuid"
 import * as fs from "fs"
 import * as path from "path"
 
@@ -14,7 +13,6 @@ export class EndpointsKitStack extends cdk.Stack {
 
     super(scope, id, props)
 
-    const apiGateway = new ForecastAPIGateway(this)
-
+    new ForecastAPIGateway(this);
   }
 }
