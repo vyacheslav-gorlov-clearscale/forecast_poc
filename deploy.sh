@@ -3,4 +3,4 @@ set -u
 set -o pipefail
 
 cdk synthesize
-cdk deploy --require-approval
+cdk deploy --require-approval never
