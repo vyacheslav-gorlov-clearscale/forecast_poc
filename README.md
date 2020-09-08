@@ -1,6 +1,14 @@
 # Welcome to your CDK Forecast POC project!
 
-## Getting Started
+## Install
+Depending on your OS, run:
+```shell script
+./install_macOS.sh
+# OR
+./install_ubuntu.sh
+```
+
+## Deploy
 
 To deploy the stack, run:
 ```shell script
