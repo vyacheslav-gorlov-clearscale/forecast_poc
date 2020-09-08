@@ -1,6 +1,6 @@
-set -e
-set -u
-set -o pipefail
+set -euo pipefail
 
+npm install --save
 cdk synthesize
+cdk bootstrap
 cdk deploy --require-approval never

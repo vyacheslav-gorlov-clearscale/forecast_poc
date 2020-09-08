@@ -4,9 +4,7 @@
 
 To deploy the stack, run:
 ```shell script
-npm run build
-cdk synthesize
-cdk deploy
+./deploy.sh
 ```
 
 ## TODO

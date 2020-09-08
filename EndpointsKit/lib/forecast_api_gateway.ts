@@ -10,7 +10,9 @@ export class ForecastAPIGateway extends APIGateway.RestApi {
         const forecasts = this.root.addResource("forecasts")
 
         const makeForecastLambda = new MakeForecastLambda(scope)
-        const makeForecastIntegration = new APIGateway.LambdaIntegration(makeForecastLambda)
+        const makeForecastIntegration = new APIGateway.LambdaIntegration(makeForecastLambda, {
+            proxy: true
+        })
         forecasts.addMethod("POST", makeForecastIntegration)
     }
 

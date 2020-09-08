@@ -1,7 +1,6 @@
-set -e
-set -u
-set -o pipefail
+set -euo pipefail
 
+npm install --save
 cdk synthesize
 cdk bootstrap
 DEPLOY_OUTPUT=$(cdk deploy --require-approval never 2>&1) # Cause AWS CDK writes its messages into stderr

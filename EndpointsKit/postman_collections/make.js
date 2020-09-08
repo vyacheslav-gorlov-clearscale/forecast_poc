@@ -3,7 +3,7 @@ const path = require("path")
 const uuid = require("uuid")
 
 const input = process.argv[2]
-const matches = input.matchAll(new RegExp('((?<=\ForecastAPIGateway)(.*?= )(.*?)(?=\\n))'))
+const matches = input.matchAll(new RegExp('((?<=\ForecastAPIGateway)(.*?= )(.*?)(?=\\n))', 'g'))
 
 // matches is not an array, but iterator
 let apiEndpoint = null
