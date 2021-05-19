@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "f40d6ad4-905b-44c7-acf5-35ee6d649cb0",
+		"name": "ForecastPOC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MakeForecast",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"startDate\": \"2018-01-05T00:00:00\",\n    \"endDate\": \"2018-01-06T00:00:00\",\n    \"itemId\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/forecasts/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"forecasts",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "77fa5c42-daed-4535-bfb7-97921ffeb503",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "a7070312-bcc9-4572-adb2-6621cff4333d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "f65ee34b-77d6-4e2d-b2ad-2882e1cdf6ae",
+			"key": "url",
+			"value": "@API_GATEWAY_ENDPOINT",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
