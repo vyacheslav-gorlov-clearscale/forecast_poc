@@ -1,14 +1,23 @@
-# Welcome to your CDK TypeScript project!
+# Personalize POC
 
-This is a blank project for TypeScript development with CDK.
+## Install
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+Depending on your OS, run:
+```shell script
+./install_macOS.sh
+# OR
+./install_ubuntu.sh
+```
 
-## Useful commands
+## Deploy
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+- First, run the script:
+```shell script
+./deploy.sh
+```
+- Open the deployed Amazon SageMaker Notebook in AWS Console and navigate to `Notebooks`directory, where you need to run files one-by-one to prepare the ML models.
+- Next, proceed to `./EndpointsKit/README.md` and follow its instructions
+
+## Attribution
+
+Based on [Personalize POC](https://github.com/chrisking/PersonalizePOC)

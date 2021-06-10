@@ -4,7 +4,7 @@
 Follow the `Install` section of the root Readme
 
 ## Deploy
-Add correct Amazon Personalize ARNs into the lib/env.json, then execute the shell script below:
+Add correct Amazon Forecast ARNs into the lib/env.json, then execute the shell script below:
 ```shell script
 ./deploy.sh
 ```
